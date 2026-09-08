@@ -1,0 +1,10 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Disabled: AppColors (background/text/border/surface colors) are now
+    # dynamic getters that switch with Dark Mode, so most widgets that
+    # reference them can no longer be const — these two lints would just
+    # flag that intentional, necessary pattern everywhere.
+    prefer_const_constructors: false
+    prefer_const_literals_to_create_immutables: false
